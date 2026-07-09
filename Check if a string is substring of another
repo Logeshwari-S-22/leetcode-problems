@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+bool isSubstring(string str, string sub) {
+    return str.find(sub) != string::npos;
+}
+
+int main() {
+    string str = "hello world";
+    string sub = "world";
+    if (isSubstring(str, sub))
+        cout << "Yes";
+    else
+        cout << "No";
+    return 0;
+}
